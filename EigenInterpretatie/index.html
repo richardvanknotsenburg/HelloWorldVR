@@ -18,9 +18,11 @@
           <img id="grass" src="images/grass.jpg" />
       </a-assets>
 
+      <!-- toevoegen van shadow effecten -->
       <a-entity 
         light="type:directional; castShadow:true" 
-        position="1 2.5 1"></a-entity>
+        position="1 2.5 1">
+      </a-entity>
 
       <a-box id="myBox" 
         position="5 1.5 -4" 
@@ -35,7 +37,8 @@
                     easing: linear;
                     dir: alternate;
                     loop: true"
-        particle-system="color: #EF0000,#44CC00;">
+        particle-system="color: #EF0000,#44CC00;"> <!-- hier heb ik gebruik gemaakt van de particle system, die de rode sterretjes afschiet. (sterren zijn preset/default) -->
+
        
                   
       </a-box>
@@ -44,7 +47,7 @@
         position="0 2.25 -15" 
         particle-system="preset: snow; particleCount: 5000">
           
-      </a-entity> 
+      </a-entity> <!-- voor een kerstactige sfeer heb ik algemeen vallende sneeuw ingevoegd.-->
 
 
 
